@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Lato:400,700);
+
+html, body {
+	height: 100%;
+}
+
+body {
+	padding-top:	20px;
+	font-family:	'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#connect-host {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+#connect-password {
+	margin-bottom: -1px;
+	border-radius: 0;
+}
+#connect-port {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+#console-wrap, #console-wrap > .row, #console-wrap > .row > div, #console {
+	height: 100%;
+}
+
+#console {
+	display: flex;
+	flex-direction: column;
+}
+
+#console-output {
+	font-family: 'Roboto Mono', Menlo, Monaco, Consolas, "Courier New", monospace;
+	height: 100%;
+	width:	100%;
+	position: absolute;
+	background-color: #FAFAFA;
+	border-color: #DBDBDB;
+}
+
+#console-output-wrap {
+	order: 1;
+	flex: 1 100%;
+	flex-grow: 1;
+	overflow: hidden;
+	position: relative;
+}
+
+#console-input-wrap {
+	order: 2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

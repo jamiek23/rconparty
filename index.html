@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RCON Party!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+	<link rel="stylesheet" href="stylesheets/rcon.css" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="connect-wrap" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<h2>Connect to Rust server</h2>
+				<form id="connect" class="form">
+					<input type="text" id="connect-host" class="form-control" placeholder="Hostname / IP" />
+					<input type="password" id="connect-password" class="form-control" placeholder="Password" />
+					<input type="text" id="connect-port" class="form-control" placeholder="Port (28016 if blank)" />
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary">Connect</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="console-wrap" class="container-fluid hidden">
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<form id="console">
+					<div id="console-output-wrap">
+						<pre id="console-output"></pre>
+					</div>
+					<div id="console-input-wrap" class="row">
+						<div class="col-sm-8 col-md-9">
+							<input id="console-input" type="text" class="form-control" placeholder="Command..." />
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<button type="submit" class="btn btn-primary btn-block">Execute</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+	<script src="javascripts/he.js"></script>
+	<script src="javascripts/remoteconsole.js"></script>
+	<script>
+
+	</script>
+</body>
+</html>
